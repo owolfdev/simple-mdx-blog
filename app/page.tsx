@@ -36,14 +36,23 @@ export default function Home() {
     <div>
       <div className="flex flex-col gap-8">
         <h1 className="font-bold text-4xl">Next.js MDX Blog</h1>
-        <p>Static blog built with Next.js and MDX</p>
+        <div>
+          <p>A static blog built with Next.js and MDX</p>
+          <Link
+            className="underline"
+            target="_blank"
+            href="https://github.com/owolfdev/simple-mdx-blog"
+          >
+            Code at Github.
+          </Link>
+        </div>
 
         <section className="flex flex-col gap-4">
           <h2 className="font-bold text-2xl">Blog Posts</h2>
 
           <ul className="flex flex-col gap-4">
             {blogs.map((blog) => (
-              <li key={blog.slug}>
+              <li key={blog.slug} className="border px-3 py-2 rounded-xl">
                 <Link href={`/blog/${blog.slug}`}>
                   <h3 className="font-bold text-xl">{blog.meta.title}</h3>
                   <div>{blog.formattedDate}</div>

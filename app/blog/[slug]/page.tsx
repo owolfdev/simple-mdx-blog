@@ -29,8 +29,6 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  console.log("params from page: ", params);
-
   const props = await getPost(params);
 
   const components = {

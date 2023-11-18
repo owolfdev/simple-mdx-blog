@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   };
 
   return (
-    <article className="prose prose-base md:prose-lg lg:prose-lg mx-auto">
+    <article className="prose prose-lg md:prose-lg lg:prose-lg mx-auto">
       <h1>{props.fontMatter.title}</h1>
       <MDXRemote source={props.content} components={components} />
     </article>

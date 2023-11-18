@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import Link from "next/link";
 import YouTube from "@/components/mdx/youtube";
 import Code from "@/components/mdx/code-component/code";
 
@@ -37,7 +36,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   };
 
   return (
-    <article className="prose prose-sm md:prose-base lg:prose-lg mx-auto">
+    <article className="prose prose-base md:prose-lg lg:prose-lg mx-auto">
       <h1>{props.fontMatter.title}</h1>
       <MDXRemote source={props.content} components={components} />
     </article>

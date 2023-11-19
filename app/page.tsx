@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col gap-8">
         <h1 className="font-bold text-4xl">Next.js MDX Blog</h1>
-        <div>
+        <div className="flex flex-col gap-2">
           <p>A static blog built with Next.js and MDX</p>
           <Link
             className="underline"
@@ -43,6 +43,14 @@ export default function Home() {
             href="https://github.com/owolfdev/simple-mdx-blog"
           >
             Code at Github.
+          </Link>
+
+          <Link
+            className="underline"
+            target="_blank"
+            href="https://www.owolf.com/blog/simple-static-mdx-blog"
+          >
+            Blog post about this project.
           </Link>
         </div>
 

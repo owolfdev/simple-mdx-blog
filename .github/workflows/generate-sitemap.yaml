@@ -1,9 +1,9 @@
-name: Generate Sitemap
+name: Update Timestamp
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
-    workflow_dispatch: # Allows manual triggering of the workflow
+    - cron: "*/6 * * * *" # run every day at midnight UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
   build:

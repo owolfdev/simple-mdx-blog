@@ -1,4 +1,4 @@
-name: Update Timestamp
+name: Generate Sitemap
 
 on:
   schedule:

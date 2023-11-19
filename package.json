@@ -17,6 +17,7 @@
     "gray-matter": "^4.0.3",
     "next": "14.0.2",
     "next-mdx-remote": "^4.4.1",
+    "next-sitemap": "^4.2.3",
     "prismjs": "^1.29.0",
     "react": "^18",
     "react-dom": "^18",

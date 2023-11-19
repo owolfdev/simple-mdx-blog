@@ -10,9 +10,9 @@ async function getPost({ slug }: { slug: string }) {
     path.join("blogs", slug + ".mdx"),
     "utf-8"
   );
-  const { data: fontMatter, content } = matter(markdownFile);
+  const { data: frontMatter, content } = matter(markdownFile);
   return {
-    fontMatter,
+    frontMatter,
     slug,
     content,
   };
@@ -37,7 +37,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <article className="prose prose-lg md:prose-lg lg:prose-lg mx-auto">
-      <h1>{props.fontMatter.title}</h1>
+      <h1>{props.frontMatter.title}</h1>
       <MDXRemote source={props.content} components={components} />
     </article>
   );

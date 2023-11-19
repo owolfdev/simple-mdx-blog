@@ -2,7 +2,6 @@ name: Generate Sitemap
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
     - cron: "*/10 * * * *"
     workflow_dispatch: # Allows manual triggering of the workflow
 

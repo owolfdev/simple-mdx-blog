@@ -17,7 +17,7 @@ You'll need to add `next-sitemap` to your project. You can do this using either 
 
 ### 2. Create a Configuration File
 
-`next-sitemap` requires a configuration file (`next-sitemap.js`) at the root of your project. Here's a basic example:
+`next-sitemap` requires a configuration file (`next-sitemap.config.js`) at the root of your project. Here's a basic example:
 
 ```javascript
 module.exports = {

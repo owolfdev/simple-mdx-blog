@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://simple-mdx-blog.vercel.app
+
+# Sitemaps
+Sitemap: https://simple-mdx-blog.vercel.app/sitemap.xml

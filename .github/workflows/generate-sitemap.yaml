@@ -30,4 +30,4 @@ jobs:
           git config --global user.email 'owolfdev@gmail.com'
           git add public/*.xml # Add all XML files in the public directory
           git commit -m "Update sitemap"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/owolfdev/simple-mdx-blog.git
+          git push https://${{ GITHUB_TOKEN }}@github.com/owolfdev/simple-mdx-blog.git

@@ -4,7 +4,7 @@ See the **[live demo](https://simple-mdx-blog.vercel.app/)** and **[GitHub repos
 
 To install this project, clone this repo and use `npm install` to install the dependencies. Type `npm run dev` in the terminal to launch the app in development mode.
 
-Creating a static MDX blog in Next.js 14 involves several steps, including setting up your Next.js environment, creating MDX files, and configuring your pages to render these files. Below is a comprehensive tutorial to guide you through this process:
+To build the project from scratch you can follow the steps below:
 
 ### 1. Setting Up the Next.js Project
 

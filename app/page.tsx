@@ -42,7 +42,7 @@ export default function Home() {
             target="_blank"
             href="https://github.com/owolfdev/simple-mdx-blog"
           >
-            Code at Github.
+            Get the code at Github. Installation instructions are in the README.
           </Link>
 
           <Link
@@ -50,7 +50,7 @@ export default function Home() {
             target="_blank"
             href="https://www.owolf.com/blog/simple-static-mdx-blog"
           >
-            Blog post about this project.
+            Learn more by reading a blog post about this app.
           </Link>
         </div>
 

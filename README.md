@@ -1,89 +1,6 @@
-Installing and setting up `next-sitemap`, a module for generating sitemaps in Next.js applications, is a straightforward process. Here's a step-by-step guide:
+# MDX Blog Lite aka Simple Static MDX Blog
 
-### 1. Install `next-sitemap`
-
-You'll need to add `next-sitemap` to your project. You can do this using either npm or yarn:
-
-- **Using npm:**
-
-  ```bash
-  npm install next-sitemap
-  ```
-
-- **Using Yarn:**
-  ```bash
-  yarn add next-sitemap
-  ```
-
-### 2. Create a Configuration File
-
-`next-sitemap` requires a configuration file (`next-sitemap.config.js`) at the root of your project. Here's a basic example:
-
-```javascript
-module.exports = {
-  siteUrl: "https://www.yourdomain.com",
-  generateRobotsTxt: true, // (optional)
-  // ...other options
-};
-```
-
-Replace `https://www.yourdomain.com` with your own domain.
-
-### 3. Additional Configuration Options
-
-You can customize the behavior of `next-sitemap` by adding more options to your configuration file. Some common options include:
-
-- `exclude`: An array of paths to exclude from the sitemap.
-- `robotsTxtOptions`: Customize the generated `robots.txt` file.
-
-### 4. Update Your `package.json` Scripts (Optional)
-
-For convenience, you can add a script to your `package.json` to generate the sitemap:
-
-```json
-"scripts": {
-  "build:sitemap": "next build && next-sitemap"
-}
-```
-
-Now, you can generate your sitemap by running `npm run build:sitemap` or `yarn build:sitemap`.
-
-### 5. Generating the Sitemap
-
-Whenever you build your Next.js application, you should also generate the sitemap. If you've set up a script as above, it will automatically happen when you run your build command.
-
-### 6. Deployment
-
-After generating your sitemap, it will be available in the `public` directory of your Next.js project. Make sure that this sitemap is accessible from your deployed website (usually under `https://www.yourdomain.com/sitemap.xml`).
-
-### 7. Verify Sitemap
-
-After deploying your application with the new sitemap, it's good practice to verify that the sitemap is correctly set up by visiting `https://www.yourdomain.com/sitemap.xml` in your browser.
-
-### Conclusion
-
-That's it! You've successfully set up `next-sitemap` in your Next.js application. This will help search engines better index your website. Remember to keep your sitemap updated, especially when you make significant changes to your site's structure or content.
-
----
-
----
-
-id: affa6f1d-9801-4610-bb0d-e857f8ed2db6
-title: Simple Static MDX Blog
-image: 0W4XLGITrHg
-tags:
-
-- webdev
-- mac
-  date: 2023-11-17
-  excerpt: Creating a static MDX blog in Next.js 14 involves several steps, including setting up your Next.js environment, creating MDX files, and configuring your pages to render these files.
-  description: Creating a static MDX blog in Next.js 14 involves several steps, including setting up your Next.js environment, creating MDX files, and configuring your pages to render these files.
-  author: O. Wolfson
-  link: simple-static-mdx-blog
-
----
-
-See the [live demo](https://simple-mdx-blog.vercel.app/) and [GitHub repository](https://github.com/owolfdev/simple-mdx-blog) for this project.
+See the **[live demo](https://simple-mdx-blog.vercel.app/)** and **[GitHub repository](https://github.com/owolfdev/simple-mdx-blog)** for this project.
 
 Creating a static MDX blog in Next.js 14 involves several steps, including setting up your Next.js environment, creating MDX files, and configuring your pages to render these files. Below is a comprehensive tutorial to guide you through this process:
 
@@ -97,7 +14,8 @@ Creating a static MDX blog in Next.js 14 involves several steps, including setti
 2. **Install Dependencies**:
 
    - Install necessary packages like `fs`, `path`, `gray-matter`, and `next-mdx-remote` using npm or yarn. For example:
-     ```
+
+     ```bash
      npm install gray-matter next-mdx-remote
      ```
 
@@ -372,7 +290,3 @@ export default Code;
 
 3. **Continuous Deployment**:
    - Set up continuous deployment so that every push to your repository automatically updates your live blog.
-
-### Conclusion
-
-By following these steps, you will have a static MDX blog running on Next.js 14. The key is to effectively manage your MDX files and ensure they are rendered correctly on your Next.js pages. The combination of MDX for content and Next.js for rendering provides a powerful and flexible blogging platform.

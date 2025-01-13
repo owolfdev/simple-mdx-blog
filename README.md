@@ -1,4 +1,8 @@
+
+
 # MDX Blog Lite, aka Simple Static MDX Blog
+
+do check out [MDXBlog.com](https://mdxblog.com) for the latest demos using Next.js 15. 
 
 See the **[live demo](https://simple-mdx-blog.vercel.app/)** and **[GitHub repository](https://github.com/owolfdev/simple-mdx-blog)** for this project.
 
